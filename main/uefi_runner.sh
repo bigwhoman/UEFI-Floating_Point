@@ -1,4 +1,5 @@
 make
+cp /usr/share/OVMF/OVMF_CODE.fd ./ovmf.fd
 dd if=/dev/zero of=boot.img bs=1M count=512
 sudo mkfs.vfat boot.img
 sudo mount boot.img /mnt/
